@@ -1,31 +1,24 @@
 /*SECCION HEADER*/
-
-@mixing gradienteBoton{
-    background: $bg-gradient;
-    cursor: pointer;
-}
-
 #header{
-    .navmenu__bg{
+    .bgColor{
         background-color: $bg-color-general;
     } 
-    .navmenu__img{
-        padding-top: 1px;
+    .logo{
         height: 55px;
-        width: 55px;
+        width: 50vh;
     }
     li{
         display: inline-block;
-        padding: 0 4px;
+        padding: 0 18px;
         list-style-type: none;
     }   
     li a{
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 1em;
-        color: $font-color;
+        font-size: .9em;
+        color: $font-color-2;
         &:hover{
-            color: white;
+            color: $font-color
         }
     }
     .nav-item{
@@ -36,16 +29,13 @@
         }
     }
     .active a{
-        color: white;
+        color: $font-color;
         &:hover{
             font-weight: bold;
-            color: $font-color;
+            color: $font-color-2;
         }
     }
-    .navmenu__logsearch{
-        background-image: url('../media/search.svg');
-        background-repeat: no-repeat;
+    .logSearch{
         height: 20px;
-        background-position: center;
     }
 }

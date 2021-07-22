@@ -4,6 +4,11 @@
 }
 body{
     font-family: $fuente;
-    color: $font-color;
     font-weight: 400;
+}
+.titulosCentrales{
+	font-size: 1.5rem;
+	color: $font-color;
+	background-color: $bg-color-titulo;
+	text-align: center;
 }
