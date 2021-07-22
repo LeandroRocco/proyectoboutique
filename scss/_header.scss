@@ -1,0 +1,51 @@
+/*SECCION HEADER*/
+
+@mixing gradienteBoton{
+    background: $bg-gradient;
+    cursor: pointer;
+}
+
+#header{
+    .navmenu__bg{
+        background-color: $bg-color-general;
+    } 
+    .navmenu__img{
+        padding-top: 1px;
+        height: 55px;
+        width: 55px;
+    }
+    li{
+        display: inline-block;
+        padding: 0 4px;
+        list-style-type: none;
+    }   
+    li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em;
+        color: $font-color;
+        &:hover{
+            color: white;
+        }
+    }
+    .nav-item{
+        transform: scale(0.93);
+        transition: all 950ms ease-in-out;
+        &:hover{
+            transform: scale(1);
+        }
+    }
+    .active a{
+        color: white;
+        &:hover{
+            font-weight: bold;
+            color: $font-color;
+        }
+    }
+    .navmenu__logsearch{
+        background-image: url('../media/search.svg');
+        background-repeat: no-repeat;
+        height: 20px;
+        background-position: center;
+    }
+}

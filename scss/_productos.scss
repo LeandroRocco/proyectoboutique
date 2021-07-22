@@ -1,0 +1,50 @@
+
+/*SECCION PRODUCTOS*/
+#productos{
+	min-height: 100vh;
+	padding-top: 135px;
+}
+.productos__titulo{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-top: 70px;
+	color: white;
+	background-color: $bg-color-titulo;
+	text-align: center;
+}
+.productos__nombre{
+	text-align: center;
+	font-size: 1.1rem;
+	color: #7d656b;
+	margin-top: 0.3em;
+}
+.productos__precio{
+	text-align: center;
+	font-size: 0.8rem;
+	color: #7d656b;
+	margin-top: 0.3em;
+}
+.productos__grupo{
+	min-height: 80vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;	
+	justify-content: space-around;
+	align-items: flex-end;
+	margin: 10px;
+	padding-bottom: 75px;
+    padding-top: 40px;
+}
+.productos__bloque{
+	display: block;
+	margin: auto;
+}
+.productos__img{
+	transform: scale(0.8);
+	transition: all 950ms ease-in-out;
+	position: relative;
+	cursor: pointer;
+	&:hover{
+		transform: scale(1);
+	}
+}

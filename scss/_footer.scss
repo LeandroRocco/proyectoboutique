@@ -1,0 +1,40 @@
+
+/*SECCION FOOTER*/
+#footer{
+    .navfooter__bg{
+        background-color: $bg-color-footer;
+    }
+    .navfooter__lista{  
+        li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            color: $font-color;
+            &:hover{
+                color: white;
+            }
+        }
+        .active a{
+            color: white;
+            &:hover{
+                font-weight: bold;
+                color: $font-color;
+            }
+        }
+    }
+    .navfooter__icono{
+        overflow: hidden;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/*ICONO WHATSAPP*/
+.whatsapp__icon{
+    overflow: hidden;
+    position: fixed;
+    max-width: 45px;
+    bottom: 7px;
+    right: 6px;
+    z-index: 100;
+}

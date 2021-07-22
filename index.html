@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Boutique, un concepto diferente para la decoracion y muebles del hogar">
+    <meta name="keywords" content="muebles, living, sillas, sillones, deco, hogar, casa, concepto, sala de estar, comedor">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>Home | Boutique de sillas & sillones</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="container-fluid d-flex bgColor">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bgColor">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="media/marca+logo.png" alt="marca+logo" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navSuperior navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn my-2 my-sm-0 logSearch" type="submit"></button>
+          </form>
+        </div>    
+      </nav>
+    </header> <!--end seccion header-->
+    
+    <!-- BANNER--> 
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="media/banner1.jpg" class="d-block w-100" alt="..." srcset="media/banner1src.jpg 576w, media/banner1.jpg 1920w">
+        </div>
+        <div class="carousel-item">
+          <img src="media/banner2.jpg" class="d-block w-100" alt="..." srcset="media/banner2src.jpg 576w, media/banner2.jpg 1920w">
+        </div>
+        <div class="carousel-item">
+          <img src="media/banner3.jpg" class="d-block w-100" alt="..." srcset="media/banner3src.jpg 576w, media/banner3.jpg 1920w">
+        </div>
+      </div>
+    </div> <!--end seccion banner-->
+    
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="py-3">
+      <h2 class="titulosCentrales text-center mb-4">CATEGORIAS</h2>   
+      <div class="container row mx-auto mt-4"> 
+        <div class="card col-12 col-md-6 col-lg-4 blocCatg mb-3">
+          <img src="media/cat1.jpg" class="card-img-top caja" alt="living">
+          <div class="card-body text-center">
+            <h5 class="card-title nombre">Living</h5>
+            <button type="button" class="btn badge-pill btn-secondary btnColor" data-toggle="modal" data-target="#exampleModal">Ver más</button>
+          </div>
+        </div>
+        <div class="card col-12 col-md-6 col-lg-4 blocCatg mb-3">
+          <img src="media/cat2.jpg" class="card-img-top caja" alt="mesasysillas">
+          <div class="card-body text-center">
+            <h5 class="card-title nombre">Mesas y Sillas</h5>
+            <button type="button" class="btn badge-pill btn-secondary btnColor" data-toggle="modal" data-target="#exampleModal">Ver más</button>
+          </div>
+        </div>
+        <div class="card col-12 col-md-6 col-lg-4 blocCatg mb-3">
+          <img src="media/cat3.jpg" class="card-img-top caja" alt="deco">
+          <div class="card-body text-center">
+            <h5 class="card-title nombre">Deco</h5>
+            <button type="button" class="btn badge-pill btn-secondary btnColor" data-toggle="modal" data-target="#exampleModal">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </section> <!--end seccion categorias-->
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <nav class="navbar sticky-bottom navbar-expand-lg bgFooter">
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContentFooter" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContentFooter">
+        <ul class="navbar-nav navInferior">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-row-reverse bd-highlight pr-5">
+          <div class="p-2 bd-highlight"><a href="http://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img class="icono" src="media/youtube.png" alt="YouTube"></a></div>
+          <div class="p-2 bd-highlight"><a href="http://www.twitter.com/" target="_blank" rel="noopener noreferrer"><img class="icono" src="media/twitter.png" alt="Twitter"></a></div>
+          <div class="p-2 bd-highlight"><a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="icono" src="media/instagram.png" alt="Instagram"></a></div>
+          <div class="p-2 bd-highlight"><a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="icono" src="media/facebook.png" alt="Facebook"></a></div>
+        </div>          
+      </nav>
+      <div class="whatsapp">
+          <a href="https://web.whatsapp.com/" rel="noopener noreferrer" target="_blank"><img class="iconWa" src="media/whatsapp.png" alt="WhatsApp"></a>
+      </div>
+    </footer> <!--end seccion footer-->
+
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Gracias por elegirnos!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Para ver los productos, presiona en el boton "Ok"
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
+            <a href="productos.html" class="btn btn-outline-success">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div> <!--end MODAL-->
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
