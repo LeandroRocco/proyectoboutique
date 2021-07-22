@@ -31,12 +31,12 @@
     position: relative;
 }
 .blocCatg{
+    :hover .caja{
+        transform: scale(1);
+    }
     .nombre{
         background: $bg-gradient;
         cursor: pointer;
-    }
-    :hover .caja{
-        transform: scale(1);
     }
 }
 
