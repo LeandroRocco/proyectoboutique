@@ -1,36 +1,41 @@
 
 /*SECCION FOOTER*/
-#footer{
-    .navfooter__bg{
-        background-color: $bg-color-footer;
-    }
-    .navfooter__lista{  
-        li a{
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.9rem;
+.bgFooter{
+    background-color: $bg-color-footer;
+}
+.navInferior{  
+    li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .8rem;
+        color: $font-color-2;
+        &:hover{
             color: $font-color;
-            &:hover{
-                color: white;
-            }
-        }
-        .active a{
-            color: white;
-            &:hover{
-                font-weight: bold;
-                color: $font-color;
-            }
         }
     }
-    .navfooter__icono{
-        overflow: hidden;
-        width: 30px;
-        height: 30px;
+    .active a{
+        color: $font-color;
+        &:hover{
+            font-weight: bold;
+            color: $font-color-2;
+        }
+    }
+}
+.icono{
+    overflow: hidden;
+    width: 33px;
+    height: 33px;
+    filter: invert(100%);
+    transform: scale(0.98);
+    &:hover{
+        border: 1.5px solid black;
+        border-radius: 10px;
+        transform: scale(1);
     }
 }
 
 /*ICONO WHATSAPP*/
-.whatsapp__icon{
+.whatsapp .iconWa{
     overflow: hidden;
     position: fixed;
     max-width: 45px;
