@@ -136,6 +136,54 @@ body {
   .productos__img:hover {
     transform: scale(1); }
 
+/*SECCION NOSOTROS*/
+#nosotros {
+  min-height: 100vh;
+  padding-top: 135px; }
+  #nosotros .texto1 {
+    color: #757575;
+    letter-spacing: 0.4px;
+    line-height: 1.7em;
+    font-size: 1.3rem;
+    margin: auto;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 81px; }
+  #nosotros .foto-nosotros {
+    background: url(./media/fotonosotros.png) no-repeat;
+    background-size: cover;
+    height: 570px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 49%; }
+
+/*SECCION CONTACTO*/
+#contacto {
+  min-height: 100vh;
+  padding-top: 135px; }
+  #contacto .container {
+    background-color: #92acab59;
+    border-radius: 15px; }
+  #contacto .tituloContacto {
+    margin-top: 40px;
+    padding-right: 80px;
+    color: #7d656b;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: right;
+    background: linear-gradient(90deg, #aeadad 40%, rgba(174, 173, 173, 0.286152) 85%); }
+  #contacto .listaContacto {
+    text-align: right;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 80px;
+    font-size: 1rem;
+    color: #7d656b; }
+  #contacto .listaContacto li a {
+    text-decoration: none; }
+
 /*SECCION FOOTER*/
 #footer .navfooter__bg {
   background-color: #2e2e2e; }
