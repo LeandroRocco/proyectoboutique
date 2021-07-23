@@ -23,8 +23,8 @@
 }
 .icono{
     overflow: hidden;
-    width: 33px;
-    height: 33px;
+    width: 30px;
+    height: 30px;
     filter: invert(100%);
     transform: scale(0.98);
     &:hover{
@@ -38,8 +38,8 @@
 .whatsapp .iconWa{
     overflow: hidden;
     position: fixed;
-    max-width: 45px;
-    bottom: 7px;
-    right: 6px;
+    max-width: 42px;
+    bottom: 10px;
+    right: 7px;
     z-index: 100;
 }
