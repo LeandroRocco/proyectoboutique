@@ -1,0 +1,31 @@
+
+/*SECCION CONTACTO*/
+#contacto{
+	min-height: 100vh;
+	padding-top: 135px;
+	.container{
+		background-color: #92acab59;
+		border-radius: 15px;
+	}
+	.tituloContacto{
+		margin-top: 40px;
+		padding-right: 80px;
+		color: #7d656b;
+		font-weight: 400;
+		font-size: 22px;
+		text-align: right;
+		background: linear-gradient(90deg, rgba(174,173,173,1) 40%, rgba(174,173,173,0.2861519607843137) 85%);
+	}
+	.listaContacto{
+		text-align: right;
+		list-style-type: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-right: 80px;
+		font-size: 1rem;
+		color: #7d656b;
+	}
+	.listaContacto li a{
+		text-decoration: none;
+	}
+}
