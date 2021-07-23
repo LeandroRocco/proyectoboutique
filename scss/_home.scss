@@ -19,7 +19,7 @@
     color: black;
     background-color: white;
     border-color: black;
-    :hover{
+    &:hover{
         color: $font-color;
         background-color: $bg-color-general;
         border-color: black;
@@ -31,7 +31,7 @@
     position: relative;
 }
 .blocCatg{
-    :hover .caja{
+    &:hover .caja{
         transform: scale(1);
     }
     .nombre{

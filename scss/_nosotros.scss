@@ -1,25 +1,19 @@
 
 /*SECCION NOSOTROS*/
 #nosotros{
-	min-height: 100vh;
 	padding-top: 135px;
 	.texto1{
-		color: #757575;
+		color: black;
 		letter-spacing: 0.4px;
 		line-height: 1.7em;
 		font-size: 1.3rem;
-		margin: auto;
 		padding-left: 110px;
 		padding-right: 110px;
 		padding-top: 81px;
 	}
-	.foto-nosotros{
-		background: url(./media/fotonosotros.png) no-repeat;
-		background-size: cover;
-		height: 570px;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 49%;
-	}
+}
+.foto-nosotros{
+	display: flex; 
+	margin: auto;
+	padding-bottom: 100px;
 }

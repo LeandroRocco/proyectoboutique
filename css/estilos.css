@@ -47,7 +47,7 @@ body {
     color: #aaa; }
 
 #header .logSearch {
-  height: 20px; }
+  height: 1.5em; }
 
 /*SECCION BANNER*/
 .carousel {
@@ -66,7 +66,7 @@ body {
   color: black;
   background-color: white;
   border-color: black; }
-  .btnColor :hover {
+  .btnColor:hover {
     color: #fff;
     background-color: #000;
     border-color: black; }
@@ -76,7 +76,7 @@ body {
   transition: all 800ms ease-in-out;
   position: relative; }
 
-.blocCatg :hover .caja {
+.blocCatg:hover .caja {
   transform: scale(1); }
 
 .blocCatg .nombre {
@@ -92,71 +92,55 @@ body {
 #productos {
   min-height: 100vh;
   padding-top: 135px; }
+  #productos .nombreP {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 0.3em;
+    background: radial-gradient(circle, #606060 0%, rgba(172, 172, 172, 0.72451) 100%); }
+  #productos .precioP {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 0.3em; }
+  #productos .group {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 10px;
+    padding-bottom: 75px;
+    padding-top: 40px; }
 
-.productos__titulo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-top: 70px;
-  color: white;
-  background-color: #646464;
-  text-align: center; }
-
-.productos__nombre {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #7d656b;
-  margin-top: 0.3em; }
-
-.productos__precio {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #7d656b;
-  margin-top: 0.3em; }
-
-.productos__grupo {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin: 10px;
-  padding-bottom: 75px;
-  padding-top: 40px; }
-
-.productos__bloque {
+.blockP {
   display: block;
   margin: auto; }
-
-.productos__img {
-  transform: scale(0.8);
-  transition: all 950ms ease-in-out;
-  position: relative;
-  cursor: pointer; }
-  .productos__img:hover {
-    transform: scale(1); }
+  .blockP img {
+    transform: scale(0.8);
+    transition: all 950ms ease-in-out;
+    position: relative;
+    cursor: pointer; }
+    .blockP img:hover {
+      transform: scale(1); }
 
 /*SECCION NOSOTROS*/
 #nosotros {
-  min-height: 100vh;
   padding-top: 135px; }
   #nosotros .texto1 {
-    color: #757575;
+    color: black;
     letter-spacing: 0.4px;
     line-height: 1.7em;
     font-size: 1.3rem;
-    margin: auto;
     padding-left: 110px;
     padding-right: 110px;
     padding-top: 81px; }
-  #nosotros .foto-nosotros {
-    background: url(./media/fotonosotros.png) no-repeat;
-    background-size: cover;
-    height: 570px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 49%; }
+
+.foto-nosotros {
+  display: flex;
+  margin: auto;
+  padding-bottom: 100px; }
 
 /*SECCION CONTACTO*/
 #contacto {
@@ -185,33 +169,39 @@ body {
     text-decoration: none; }
 
 /*SECCION FOOTER*/
-#footer .navfooter__bg {
+.bgFooter {
   background-color: #2e2e2e; }
 
-#footer .navfooter__lista li a {
+.navInferior li a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.9rem;
-  color: #fff; }
-  #footer .navfooter__lista li a:hover {
-    color: white; }
-
-#footer .navfooter__lista .active a {
-  color: white; }
-  #footer .navfooter__lista .active a:hover {
-    font-weight: bold;
+  font-size: .8rem;
+  color: #aaa; }
+  .navInferior li a:hover {
     color: #fff; }
 
-#footer .navfooter__icono {
+.navInferior .active a {
+  color: #fff; }
+  .navInferior .active a:hover {
+    font-weight: bold;
+    color: #aaa; }
+
+.icono {
   overflow: hidden;
   width: 30px;
-  height: 30px; }
+  height: 30px;
+  filter: invert(100%);
+  transform: scale(0.98); }
+  .icono:hover {
+    border: 1.5px solid black;
+    border-radius: 10px;
+    transform: scale(1); }
 
 /*ICONO WHATSAPP*/
-.whatsapp__icon {
+.whatsapp .iconWa {
   overflow: hidden;
   position: fixed;
-  max-width: 45px;
-  bottom: 7px;
-  right: 6px;
+  max-width: 42px;
+  bottom: 10px;
+  right: 7px;
   z-index: 100; }

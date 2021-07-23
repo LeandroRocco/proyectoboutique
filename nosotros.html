@@ -12,8 +12,8 @@
   <body>
     <!-- HEADER -->
     <header id="header" class="container-fluid d-flex bgColor">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bgColor">
-        <a class="navbar-brand" href="index.html"><img class="logo" src="media/marca+logo.png" alt="marca+logo"></a>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bgColor">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="media/logo.svg" alt="marca+logo" srcset=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,34 +35,33 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn my-2 my-sm-0 logSearch" type="submit"></button>
+            <button class="btn my-2 my-sm-0" type="submit"><img class="logSearch" src="media/lupa.svg" alt="botonbuscar"></button>
           </form>
         </div>    
       </nav>
     </header> <!--end seccion header-->
 
-  	<section id="nosotros"> <!--Contenido seccion Nosotros-->
-  		<h2 class="titulosCentrales">ACERCA DE NOSOTROS</h2>
-  		<div>
-  			<p class="texto1">Boutique agrupa la oferta de un CONJUNTO selecto de fábricas, unificando así sus recursos y potenciando las habilidades individuales, para llegar DIA A DIA a vos, en forma permanente y directa (desde hace 90 años), con una excelente propuesta de opciones, estilos, diseños y soluciones para que puedas llevar a tu casa los mejores muebles, a los mejores precios.</p>
-        <p>EN BOUTIQUE OFRECEMOS LA COMBINACION IDEAL DE JUVENTUD + EXPERIENCIA, porque desde 1928 lideramos, sin interrupciones, el mercado del mueble Argentino y al mismo tiempo tenemos la permanente obsesión de RENOVARNOS actualizando y modernizando nuestros diseños y propuestas.</p>
-  		</div>
-      <div class="foto-nosotros"></div>
-  	</section> <!--end contenido Nosotros-->
+    <section id="nosotros"> <!--Contenido seccion Nosotros-->
+      <h2 class="titulosCentrales">ACERCA DE NOSOTROS</h2>
+      <div>
+        <p class="texto1">Boutique agrupa la oferta de un CONJUNTO selecto de fábricas, unificando así sus recursos y potenciando las habilidades individuales, para llegar DIA A DIA a vos, en forma permanente y directa (desde hace 90 años), con una excelente propuesta de opciones, estilos, diseños y soluciones para que puedas llevar a tu casa los mejores muebles, a los mejores precios.
+        EN BOUTIQUE OFRECEMOS LA COMBINACION IDEAL DE JUVENTUD + EXPERIENCIA, porque desde 1928 lideramos, sin interrupciones, el mercado del mueble Argentino y al mismo tiempo tenemos la permanente obsesión de RENOVARNOS actualizando y modernizando nuestros diseños y propuestas.</p>
+      </div>
+    </section> <!--end contenido Nosotros-->
 
-  	<div> <!--contenido seccion fotos-->
-  	<!--CARROUSEL no determinado todavia-->
-  	</div><!--end seccion fotos-->
+  	<div class="container">
+     <img class="foto-nosotros" src="media/fotonosotros.png" alt="fotonosotros"> 
+    </div><!--end seccion fotos-->
 	
     <!-- FOOTER -->
     <footer id="footer">
       <nav class="navbar sticky-bottom navbar-expand-lg bgFooter">
-      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContentFooter" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContentFooter" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContentFooter">
         <ul class="navbar-nav navInferior">
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
@@ -76,14 +75,14 @@
           </li>
         </ul>
         <div class="d-flex flex-row-reverse bd-highlight pr-5">
-          <div class="p-2 bd-highlight"><a href="http://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img class="icono" src="media/youtube.png" alt="YouTube"></a></div>
-          <div class="p-2 bd-highlight"><a href="http://www.twitter.com/" target="_blank" rel="noopener noreferrer"><img class="icono" src="media/twitter.png" alt="Twitter"></a></div>
-          <div class="p-2 bd-highlight"><a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="icono" src="media/instagram.png" alt="Instagram"></a></div>
-          <div class="p-2 bd-highlight"><a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="icono" src="media/facebook.png" alt="Facebook"></a></div>
+          <div class="p-2 bd-highlight"><a href="http://www.youtube.com/" target="_blank"><img class="icono" src="media/yt.svg" alt="YouTube"></a></div>
+          <div class="p-2 bd-highlight"><a href="http://www.pinterest.com/" target="_blank"><img class="icono" src="media/pi.svg" alt="Twitter"></a></div>
+          <div class="p-2 bd-highlight"><a href="http://www.instagram.com/" target="_blank"><img class="icono" src="media/ig.svg" alt="Instagram"></a></div>
+          <div class="p-2 bd-highlight"><a href="http://www.facebook.com/" target="_blank"><img class="icono" src="media/fb.svg" alt="Facebook"></a></div>
         </div>          
       </nav>
       <div class="whatsapp">
-          <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img class="iconWa" src="media/whatsapp.png" alt="WhatsApp"></a>
+          <a href="https://web.whatsapp.com/" rel="noopener noreferrer" target="_blank"><img class="iconWa" src="media/whatsapp.png" alt="WhatsApp"></a>
       </div>
     </footer> <!--end seccion footer-->
 
