@@ -1,207 +1,317 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/* line 1, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_reboot.scss */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
+/* line 5, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_reboot.scss */
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
+/* line 9, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_reboot.scss */
 .titulosCentrales {
   font-size: 1.5rem;
   color: #fff;
   background-color: #646464;
-  text-align: center; }
+  text-align: center;
+}
 
 /*SECCION HEADER*/
+/* line 3, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
 #header .bgColor {
-  background-color: #000; }
+  background-color: #000;
+}
 
+/* line 6, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
 #header .logo {
   height: 55px;
-  width: 50vh; }
+  width: 50vh;
+}
 
+/* line 10, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
 #header li {
   display: inline-block;
   padding: 0 18px;
-  list-style-type: none; }
+  list-style-type: none;
+}
 
+/* line 15, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
 #header li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: .9em;
-  color: #aaa; }
-  #header li a:hover {
-    color: #fff; }
+  color: #aaa;
+}
 
+/* line 20, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
+#header li a:hover {
+  color: #fff;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
 #header .nav-item {
   transform: scale(0.93);
-  transition: all 950ms ease-in-out; }
-  #header .nav-item:hover {
-    transform: scale(1); }
+  transition: all 950ms ease-in-out;
+}
 
+/* line 27, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
+#header .nav-item:hover {
+  transform: scale(1);
+}
+
+/* line 31, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
 #header .active a {
-  color: #fff; }
-  #header .active a:hover {
-    font-weight: bold;
-    color: #aaa; }
+  color: #fff;
+}
 
+/* line 33, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
+#header .active a:hover {
+  font-weight: bold;
+  color: #aaa;
+}
+
+/* line 38, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_header.scss */
 #header .logSearch {
-  height: 1.5em; }
+  height: 1.5em;
+}
 
 /*SECCION BANNER*/
+/* line 3, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
 .carousel {
-  margin-top: 81px; }
+  margin-top: 81px;
+}
 
 /*SECCION CATEGORIAS*/
+/* line 9, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
 #categorias .card {
-  width: 19rem; }
+  width: 19rem;
+}
 
+/* line 12, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
 #categorias .nombre {
   text-align: center;
   font-size: 1.1rem;
-  color: #fff; }
+  color: #fff;
+}
 
+/* line 18, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
 .btnColor {
   color: black;
   background-color: white;
-  border-color: black; }
-  .btnColor:hover {
-    color: #fff;
-    background-color: #000;
-    border-color: black; }
+  border-color: black;
+}
 
+/* line 22, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
+.btnColor:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: black;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
 .caja {
   transform: scale(0.9);
   transition: all 800ms ease-in-out;
-  position: relative; }
+  position: relative;
+}
 
+/* line 34, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
 .blocCatg:hover .caja {
-  transform: scale(1); }
+  transform: scale(1);
+}
 
+/* line 37, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
 .blocCatg .nombre {
   background: radial-gradient(circle, #606060 0%, rgba(172, 172, 172, 0.72451) 100%);
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /*MEDIAS QUERIES*/
 @media all and (min-width: 768px) {
+  /* line 45, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_home.scss */
   .titulosCentrales {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem;
+  }
+}
 
 /*SECCION PRODUCTOS*/
+/* line 3, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_productos.scss */
 #productos {
   min-height: 100vh;
-  padding-top: 135px; }
-  #productos .nombreP {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #fff;
-    margin-top: 0.3em;
-    background: radial-gradient(circle, #606060 0%, rgba(172, 172, 172, 0.72451) 100%); }
-  #productos .precioP {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #aaa;
-    margin-top: 0.3em; }
-  #productos .group {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin: 10px;
-    padding-bottom: 75px;
-    padding-top: 40px; }
+  padding-top: 135px;
+}
 
+/* line 6, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_productos.scss */
+#productos .nombreP {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 0.3em;
+  background: radial-gradient(circle, #606060 0%, rgba(172, 172, 172, 0.72451) 100%);
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_productos.scss */
+#productos .precioP {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 0.3em;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_productos.scss */
+#productos .group {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 10px;
+  padding-bottom: 75px;
+  padding-top: 40px;
+}
+
+/* line 31, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_productos.scss */
 .blockP {
   display: block;
-  margin: auto; }
-  .blockP img {
-    transform: scale(0.8);
-    transition: all 950ms ease-in-out;
-    position: relative;
-    cursor: pointer; }
-    .blockP img:hover {
-      transform: scale(1); }
+  margin: auto;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_productos.scss */
+.blockP img {
+  transform: scale(0.8);
+  transition: all 950ms ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 39, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_productos.scss */
+.blockP img:hover {
+  transform: scale(1);
+}
 
 /*SECCION NOSOTROS*/
+/* line 3, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_nosotros.scss */
 #nosotros {
-  padding-top: 135px; }
-  #nosotros .texto1 {
-    color: black;
-    letter-spacing: 0.4px;
-    line-height: 1.7em;
-    font-size: 1.3rem;
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 81px; }
+  padding-top: 135px;
+}
 
+/* line 5, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_nosotros.scss */
+#nosotros .texto1 {
+  color: black;
+  letter-spacing: 0.4px;
+  line-height: 1.7em;
+  font-size: 1.3rem;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 81px;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_nosotros.scss */
 .foto-nosotros {
   display: flex;
   margin: auto;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+}
 
 /*SECCION CONTACTO*/
+/* line 3, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_contacto.scss */
 #contacto {
   min-height: 100vh;
-  padding-top: 135px; }
-  #contacto .container {
-    background-color: #92acab59;
-    border-radius: 15px; }
-  #contacto .tituloContacto {
-    margin-top: 40px;
-    padding-right: 80px;
-    color: #7d656b;
-    font-weight: 400;
-    font-size: 22px;
-    text-align: right;
-    background: linear-gradient(90deg, #aeadad 40%, rgba(174, 173, 173, 0.286152) 85%); }
-  #contacto .listaContacto {
-    text-align: right;
-    list-style-type: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 80px;
-    font-size: 1rem;
-    color: #7d656b; }
-  #contacto .listaContacto li a {
-    text-decoration: none; }
+  padding-top: 135px;
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_contacto.scss */
+#contacto .container {
+  background-color: #92acab59;
+  border-radius: 15px;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_contacto.scss */
+#contacto .tituloContacto {
+  margin-top: 40px;
+  padding-right: 80px;
+  color: #7d656b;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: right;
+  background: linear-gradient(90deg, #aeadad 40%, rgba(174, 173, 173, 0.286152) 85%);
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_contacto.scss */
+#contacto .listaContacto {
+  text-align: right;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 80px;
+  font-size: 1rem;
+  color: #7d656b;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_contacto.scss */
+#contacto .listaContacto li a {
+  text-decoration: none;
+}
 
 /*SECCION FOOTER*/
+/* line 3, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_footer.scss */
 .bgFooter {
-  background-color: #2e2e2e; }
+  background-color: #2e2e2e;
+}
 
+/* line 7, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_footer.scss */
 .navInferior li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: .8rem;
-  color: #aaa; }
-  .navInferior li a:hover {
-    color: #fff; }
+  color: #aaa;
+}
 
+/* line 12, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_footer.scss */
+.navInferior li a:hover {
+  color: #fff;
+}
+
+/* line 16, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_footer.scss */
 .navInferior .active a {
-  color: #fff; }
-  .navInferior .active a:hover {
-    font-weight: bold;
-    color: #aaa; }
+  color: #fff;
+}
 
+/* line 18, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_footer.scss */
+.navInferior .active a:hover {
+  font-weight: bold;
+  color: #aaa;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_footer.scss */
 .icono {
   overflow: hidden;
   width: 30px;
   height: 30px;
   filter: invert(100%);
-  transform: scale(0.98); }
-  .icono:hover {
-    border: 1.5px solid black;
-    border-radius: 10px;
-    transform: scale(1); }
+  transform: scale(0.98);
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_footer.scss */
+.icono:hover {
+  border: 1.5px solid black;
+  border-radius: 10px;
+  transform: scale(1);
+}
 
 /*ICONO WHATSAPP*/
+/* line 38, ../../../../../../../../../../../../../Users/lean/Desktop/proyecto-boutique/scss/_footer.scss */
 .whatsapp .iconWa {
   overflow: hidden;
   position: fixed;
   max-width: 42px;
   bottom: 10px;
   right: 7px;
-  z-index: 100; }
+  z-index: 100;
+}
+
+/*# sourceMappingURL=estilos.css.map */
