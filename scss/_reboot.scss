@@ -6,9 +6,45 @@ body{
     font-family: $fuente;
     font-weight: 400;
 }
+
 .titulosCentrales{
 	font-size: 1.5rem;
 	color: $font-color;
 	background-color: $bg-color-titulo;
 	text-align: center;
 }
+
+.form-control:focus{
+	box-shadow: 0 0 0 .2rem rgba(78, 81, 83, 0.23);
+	border-color: transparent;
+	border-radius: 0.8rem;
+}
+
+.btn-primary:focus{
+	background-color: #777;
+	box-shadow: 0 0 0 .2rem rgba(78, 81, 83, 0.23);
+	border-color: transparent;
+	border-radius: 0.8rem;
+}
+
+.btnColor{
+    color: black;
+    background-color: white;
+    border-color: black;
+    &:hover{
+        color: $font-color;
+        background-color: $bg-color-general;
+        border-color: black;
+    }
+}
+.btnRed{
+	color: black;
+    background-color: white;
+    border-color: black;
+    &:hover{
+        color: $font-color;
+        background-color: red;
+        border-color: red;
+    }
+}
+

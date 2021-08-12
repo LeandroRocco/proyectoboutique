@@ -2,18 +2,29 @@
 /*SECCION NOSOTROS*/
 #nosotros{
 	padding-top: 135px;
+	min-height: 100vh;
+	.container{
+		background-color: $bg-color-form;
+		border-radius: 15px;
+	}
+	.cajaNosotros{
+		margin-top: 40px;
+		margin-bottom: 45px;
+	}
 	.texto1{
 		color: black;
-		letter-spacing: 0.4px;
+		letter-spacing: 0.35px;
 		line-height: 1.7em;
 		font-size: 1.3rem;
-		padding-left: 110px;
-		padding-right: 110px;
-		padding-top: 81px;
+		padding-right: 9px;
+		padding-top: 52px;
+		padding-bottom: 52px;
+		margin-bottom: 0;
 	}
 }
 .foto-nosotros{
 	display: flex; 
 	margin: auto;
-	padding-bottom: 100px;
+	padding-top: 40px;
+	padding-bottom: 25px;
 }

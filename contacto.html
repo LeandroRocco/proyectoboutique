@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Contáctate llenando el formulario, o por cualquiera de nuestras vías de comunicación">
     <meta name="keywords" content="contacto, redes, muebles, living, sillas, sillones, deco, hogar, casa, concepto, sala de estar, comedor">
+    <link rel="icon" href="media/logo.ico">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Contacto | Comunícate con Boutique</title>
@@ -13,7 +14,7 @@
     <!-- HEADER -->
     <header id="header" class="container-fluid d-flex bgColor">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bgColor">
-        <a class="navbar-brand" href="index.html"><img class="logo" src="media/logo.svg" alt="marca+logo" srcset=""></a>
+        <a class="navbar-brand" href="index.html"><img class="logo" src="media/logo.png" alt="marca+logo" srcset=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,11 +52,11 @@
           <div class="form-row">
             <div class="col-md-6 mb-3">
               <label for="validationDefault01">Nombre</label>
-              <input type="text" class="form-control" id="validationDefault01" value="Leandro Matías" required>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Leandro Matías" required>
             </div>
             <div class="col-md-6 mb-3">
               <label for="validationDefault02">Apellido</label>
-              <input type="text" class="form-control" id="validationDefault02" value="Rocco" required>
+              <input type="text" class="form-control" id="validationDefault02" placeholder="Rocco" required>
             </div>
           </div>
           <div class="form-row">
@@ -103,8 +104,8 @@
               </label>
             </div>
           </div>
-          <button class="btn btn-primary btnColor" type="submit">Enviar</button>
-          <button class="btn btn-primary btnColor mx-1" type="submit">Limpiar</button>    
+          <button class="btn btn-primary btnColor" type="button" data-toggle="modal" data-target="#envioForm">Enviar</button>
+          <button class="btn btn-primary btnColor mx-1" type="submit">Limpiar</button>   
         </form><!--end de mi formulario-->
       </div>
       <div>
@@ -112,9 +113,14 @@
       </div>
       <div>
         <ul class="listaContacto">
-          <li><a href="http://www.gmail.com/" target="_blank" rel="noopener noreferrer">misitio@ejemplo.com.ar</a></li>
-          <li>011-123456789</li>
-          <li>+549123456789</li>
+          <li>
+            <img class="icon2" src="media/mail.svg" alt="gmail">
+            <a href="http://www.gmail.com/" target="_blank" rel="noopener noreferrer">boutique.adm@gmail.com</a></li>
+          <li>
+            <img class="icon2" src="media/tel.svg" alt="telefono">
+            011-123456789</li>
+          <li>
+            <img class="icon2" src="media/wa.svg" alt="whatsapp">+549123456789</li>
         </ul>
       </div>
     </section> <!--end seccion contacto-->
@@ -152,6 +158,24 @@
       </div>
     </footer> <!--end seccion footer-->
 
+    <!-- MODAL CONTACTO -->
+    <div class="modal fade" id="envioForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Gracias!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Tu mensaje ha sido recibido correctamente, en breve nos comunicaremos contigo
+          </div>
+          <div class="modal-footer">
+            <a href="contacto.html" class="btn btn-primary btnColor">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div><!--end Modal contacto-->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>

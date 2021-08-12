@@ -15,16 +15,6 @@
         color: $font-color;
     }
 }
-.btnColor{
-    color: black;
-    background-color: white;
-    border-color: black;
-    &:hover{
-        color: $font-color;
-        background-color: $bg-color-general;
-        border-color: black;
-    }
-}
 .caja{
     transform: scale(0.9);
     transition: all 800ms ease-in-out;
